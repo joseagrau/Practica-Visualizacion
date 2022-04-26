@@ -1,0 +1,293 @@
+<!-- <div id="app"></div> -->
+<h1>Visualización - Práctica1</h1>
+
+<b>Nombre: </b>José Antonio Grau Albors <br>
+<b>URL: </b> <a
+href="https://js-a914fi.stackblitz.io"> https://js-a914fi.stackblitz.io
+</a>
+<br>
+<b>URL github: </b><a
+  href="https://https://github.com/joseagrau/08MBID---Visualizacion-de-Datos"> 
+  https://https://github.com/joseagrau/08MBID---Visualizacion-de-Datos
+  </a>
+</b>
+<br>
+<br>
+<br>
+
+<div class="intro">
+  <h1>Introducción </h1>
+  <p class="texto-justificado">
+    Chicago, situada junto al lago Michigan en Illinois, está entre las ciudades más grandes de Estados Unidos. Famosa por su osada arquitectura, su horizonte está salpicado de rascacielos y es conocida coloquialmente como "Second City" (La Segunda Ciudad) o "Windy City" (La Ciudad del Viento), es la tercera ciudad con mayor número de población en Estados Unidos, detrás de Nueva York y Los Ángeles.
+    <br>
+    <br>
+    Por consiguiente, es una de las ciudades más equipadas en cuanto a red de infraestructuras de transporte se refiere.
+    <br>
+    <br>
+    Las licencias de taxis fueron antaño un negocio con el que obtener una seguridad financiera, y en las principales ciudades estadounidenses muchos las utilizaron para asentarse en el país con ingresos fijos o para asegurarse una jubilación al revenderlos después. Pero los tiempos están cambiando, y la irrupción de Uber y otras plataformas digitales en el sector del transporte está acabando con este modelo de negocio no sólo en Estados Unidos, sino también en España, México o Colombia.
+    <br>
+    <br>
+    El objetivo que se pretende obtener sería igualar los servicios de taxi a las nuevas plataformas digitales que están acabando con este modelo de negocio. En base a los datos obtenidos se podrían establecer métricas y abaratar costes para volver a ser competidores de este tipo de plataformas. Además de esto, podrían establecerse tarifas más bajas en función del uso de los taxis en los distintos barrios para llamar aún más la atención de los clientes.<br>
+    <br>
+    <br>
+    <br>
+    <br>
+      
+    Para poder resolver el problema planteado, habrá que realizar una búsqueda de información acerca de los viajes en taxis de clientes en la ciudad de Chicago, localizando los lugares desde dónde se ha empezado el servicio, el lugar de destino, el costo de la tarifa, horas de inicio del viaje, hora de finalización, duración de este, barrio donde se empieza y finaliza el servicio.
+    <br>
+    <br>
+      Se puede encontrar el Dataset en la siguiente URL:
+      <a href="https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew/data"> 
+      https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew/data
+    </a>
+      
+      <br>
+      <br>
+      Con el siguiente Dataset se obtienen 23 columnas distintas y más de 195 millones de registros aproximadamente con información de los distintos viajes en taxi en la ciudad de Chicago. Por lo que para este caso, se ha filtrado para el año 2021, ya que si se seleccionaban todos los años el Dataset era muy extenso.
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      Por lo cual, este análisis pretende responder a las siguientes preguntas:
+      <br><br>
+      <b>
+       1) ¿Qué barrios de Chicago utilizan la plataforma de taxis habitualmente? 
+      <br><br>
+      2) ¿Qué barrios de Chicago utilizan menos la platafora de taxis? 
+      <br><br>
+      3) ¿Cuál es el precio medio por viaje?
+      <br><br>
+      4) ¿Cuál es la duración en km media por viaje?
+      <br><br>
+      5) ¿Cuál es el precio del viaje en base a los minutos del recorrido?
+      <br><br>
+      6) ¿Cuáles son los barrios que más propinas dejan?
+      <br><br>
+      7) ¿En qué meses del año se utiliza más el servicio de taxis?
+      </b>
+
+  </p">
+</div>
+<br>
+<br>
+
+<br>
+<br>
+
+<center>
+<h2>Gráficos en Datawrapper</h2>
+</center>
+
+<br>
+<br> 
+  <div class="questions">
+    
+    Mediante los siguientes gráficos se puede obtener información que nos contestaría a las dos primeras cuestiones. Y en base a ello se podrían aplicar tarifas más baratas o descuentos para favoreces el uso de la plataforma.
+    <br>
+    <br>
+    <b>
+    Gráficos de tarta: 
+    </b>
+    Representan comparaciones de porcentajes de una manera muy visual, por lo que se han elegido para este caso por la facilidad de comprensión a la hora de ver los diferentes barrios.
+
+    <table class="default">
+      <tr>
+        <td>
+          <br>
+          <br>
+          <br>
+          <iframe title="Los 5 barrios de Chicago donde más taxis inician su recorrido" aria-label="Pie Chart" id="datawrapper-chart-oLunC" src="https://datawrapper.dwcdn.net/oLunC/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 50% !important; border: none;" height="428"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+          </script>
+        </td>
+
+        <td>
+          <iframe title="Los 15 barrios de Chicago donde menos taxis inician su recorrido" aria-label="Pie Chart" id="datawrapper-chart-tcdEj" src="https://datawrapper.dwcdn.net/tcdEj/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 50% !important; border: none;" height="428"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+          </script>
+        </td>
+      </tr>
+    </table>
+
+</div>
+
+<br>
+<br>
+<hr>
+<br>
+
+<div class="questions"><br>
+<br>
+Con el siguiente gráfico se puede se observar que el 37% de los viajes tienen un precio entre 26 y 50€
+<br>
+<br>
+<b>
+Gráfico de columnas: 
+</b>
+Representan comparaciones numéricas simples, por lo que en este caso, de una manera muy simple se aprecia el precio de los distintos viajes.
+<br>
+<br>
+<br>
+<br>
+</div>
+<div>
+  <iframe title="Precio por viajes en taxi en la ciudad de Chicago" aria-label="Column Chart" id="datawrapper-chart-X64S2" src="https://datawrapper.dwcdn.net/X64S2/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 50% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+  </script>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="questions">  <br>
+  <br>
+  Gracias al gráfico de Donut, se puede apreciar que normalmente los viajes tienen una distancia de entre 0,1 y 25km
+  <br>
+    <br>
+    <b>
+    Gráficos de Donut: 
+    </b>
+    Al igual que los gráficos de tartas, representan comparaciones de porcentajes de una manera muy visual, por lo que para este caso es muy intuitivo visualizar los kilómetros que se recorren en los viajes.
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+<div>
+  <iframe title="Distancia en viajes en taxi en la ciudad de Chicago" aria-label="Donut Chart" id="datawrapper-chart-Oa159" src="https://datawrapper.dwcdn.net/Oa159/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 50% !important; border: none;" height="454"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+  </script>
+</div>
+
+
+<br>
+<br>
+<hr>
+<br>
+
+<center>
+<h2>Gráficos en Google Sheets</h2>
+</center>
+<br>
+<br>
+
+
+<b>URL google sheets: </b><a
+  href="https://docs.google.com/spreadsheets/d/1Gx4Zps-AMKeZ5yCYPvsgAzAeMM1HXJmi3OTmDcinpk4/edit?usp=sharing"> 
+  https://docs.google.com/spreadsheets/d/1Gx4Zps-AMKeZ5yCYPvsgAzAeMM1HXJmi3OTmDcinpk4/edit?usp=sharing   </a>
+
+  <div class="questions"><br>
+
+  <br>
+  <b>
+  Gráficos de Puntos o Scatterplot: 
+  </b>
+  Mediante este gráfico se pueden representar dos variables en el sistema cartesiano y se podría observar la correlación que existe entre el precio de los viajes y la duración en minutos de estos. Gracias a ello, se puede observar como hay un crecimiento lineal en funciónd de la duración en minutos de los viajes.
+<br>
+  <p> Para este gráfico se han utilizado 50 filas de datos del dataset, ya que la hoja de google sheets no obtenía correctamente los valores numéricos. </p>
+</div>
+<div>
+  <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSj-H-8g9X27SK0Bkljn2HHFU2g1ML6RfiEnKa1pCqQaN-ia6DZEixuCtpCMRykUxRjyMCG1OAJfnmE/pubchart?oid=1062235062&amp;format=interactive"></iframe>
+</div>
+
+
+<br>
+<br>
+<hr>
+<br>
+<div class="questions">
+  <br>
+  <br>
+  <b>
+  Gráficos de Barras: 
+  </b>
+  Al igual que los gráficos de columnas, de una manera muy simple se llega a apreciar los 5 barrios que más propinas dejan en la ciudad de Chicago.
+  <br>
+  Según el gráfico, el barrio número 76 con un total de 2889€, es el barrio que más propinas deja de toda la ciudad.
+  <br>
+  <br>
+      <p> Para este gráfico se han utilizado 5000 filas de datos del dataset</p>
+</div>
+<div>
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSj-H-8g9X27SK0Bkljn2HHFU2g1ML6RfiEnKa1pCqQaN-ia6DZEixuCtpCMRykUxRjyMCG1OAJfnmE/pubchart?oid=676733120&amp;format=interactive"></iframe>
+  </div>
+
+
+<br>
+<br>
+<hr>
+<br>
+
+<center>
+<h2>Gráficos en PowerBI</h2>
+</center>
+
+<br>
+<br>
+
+<div class="questions">
+    
+Mediante el siguiente gráfico, se podría responder a la última de las preguntas: ¿En qué meses del año se utiliza más el servicio de taxis? 
+<br>
+<br>
+Gracias al gráfico, se pueden ver los viajes en taxi realizados en los 5 primeros meses de los años 2017 a 2021 en la ciudad de Chicago.
+<br>En este caso, los valores se repiten ya que no disponemos de más datos que de 2021 al haber realizado la <b>limpieza de datos en las asignaturas de Minería de Datos (05MBID) y Estadística Avanzada (06MBID).</b><br>
+Para hacerlo de forma dinámica, se han copiado la cantidad de viajes al resto de años.
+<br>
+<br>
+<b>
+Gráficos de Burbujas: 
+</b>
+  Son una variación de los gráficos de dispersión en el que los puntos de datos se reemplazan por burbujas y pueden representar una dimensión adicional mediante el tamaño de las burbujas.
+
+
+<br>
+<br>
+<br>
+<br>
+  <iframe title="Practica" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=9a7527de-4a21-461f-b67f-dfc1ec6e264a&autoAuth=true&ctid=02674ef9-5c2c-47d0-b2bc-595a784dda00&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+
+
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+
+<br>
+<br>
+
+<center>
+<h2>Herramientas utilizadas</h2>
+</center>
+<br>
+<br>
+<b>Excel: </b> Utilizado para realización de cálculos y tablas dinámicas para poder utilizar en las distintas herramientas de creación de gráficos.
+<br>
+<b>Google Sheets: </b> Programa de hojas de cálculo de Google que permite tanto la utilización de tablas dinámicas como la representación de gráficos.
+<br>
+<b>Datawrapper: </b> Utilizada para la creación de gráficos, intuitiva y de fácil edición.
+<br>
+<b>PowerBI: </b> Utilizada para la creaciónd de gráficos dinámicos, representaciones más sencillas de los datos pero más dificultad al elaborarlos.
+<br>
+<br>
+<br>
+<br>
+
+
+<hr>
+<br>
+<br>
+
+
+<center>
+<h2>Conclusiones</h2>
+</center>
+<br>
+<br>
+Como conclusiones finales, se puede ver claramente como gracias a la representación gráfica y adecuada de los datos, se podría contestar a muchas de las preguntas que nos haríamos con un dataset inicial. Y gracias a ello, localizar fácilmente puntos a tener en cuenta para la obtención de conocimiento y aportar valor.
+<br>
+<br>
+<br>
+<br>
+
